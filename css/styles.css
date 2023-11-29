@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: relative;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/PWexample2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 8%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    transition: 1s;
+}
+
+.navbar:hover {
+    height: 10%;
+}
+
+.nav-item-container {
+    width: 5vw;
+    overflow: hidden;
+    transition: 1500ms;
+}
+
+.nav-item {
+    transition: all 400ms;
+    display: flex;
+}
+
+.nav-item:hover {
+    padding-left: 1vw;
+}
+
+#click-container {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+.content {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#my-name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: -30vh;
+    opacity: 0;
+}
+
+.text-container {
+    margin-left: 70px;
+    width: 31%;
+    height: 22%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius:10%;
+    margin-top: -220px;
+    padding-top: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.personality-container {
+    display: flex;
+}
+.i-am-text {
+    font-family: "Raleway";
+    opacity: 0;
+}
+.personality {
+    position: absolute;
+    margin-left: -145px;
+    margin-top: -2px;
+    font-family: "Raleway";
+}
+.programmer {
+    opacity: 0;
+}
+.developer {
+    opacity: 0;
+}
+.true-model {
+    opacity: 0;
+}
