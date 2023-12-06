@@ -20,26 +20,48 @@
                 CLICK ME
             </button>
         </div>
+        <div class="background-image"></div>
         <div class="background">
             <div class="navbar">
-                <div class="nav-item-container">
-                    <a href="https://github.com/YakupAtahanov" class="nav-item" target="_blank">
-                        <img src="assets/github.png" width="40">
-                    </a>
+                <div class="left">
+                    <div class="nav-item-container left-item-container">
+                        <a href="https://github.com/YakupAtahanov" class="nav-item" target="_blank">
+                            <img src="assets/github.png" width="40">
+                        </a>
+                    </div>
+                    <div class="nav-item-container left-item-container">
+                        <a href="https://www.linkedin.com/in/yakup-atahanov-851706255/" class="nav-item" target="_blank">
+                            <img src="assets/linkedin.png" width="40">
+                        </a>
+                    </div>
+                    <div class="nav-item-container left-item-container">
+                        <a href="https://www.instagram.com/yakupatahanow/" class="nav-item" target="_blank">
+                            <img src="assets/instagram.png" width="40">
+                        </a>
+                    </div>
+                    <div class="nav-item-container left-item-container">
+                        <a href="mailto:yakup.atahanow.b@gmail.com" class="nav-item" target="_blank">
+                            <img src="assets/envelope.png" width="40">
+                        </a>
+                    </div>
                 </div>
-                <div class="nav-item-container">
-                    <a href="https://www.linkedin.com/in/yakup-atahanov-851706255/" class="nav-item" target="_blank">
-                        <img src="assets/linkedin.png" width="40">
-                    </a>
-                </div>
-                <div class="nav-item-container">
-                    <a href="https://www.instagram.com/yakupatahanow/" class="nav-item" target="_blank">
-                        <img src="assets/instagram.png" width="40">
-                    </a>
+                <div class="right">
+                    <div class="nav-item-container right-item-container">
+                        <a onclick="mainMenuClicked()" class="nav-item right-item">Main Menu</a>
+                    </div>
+                    <div class="nav-item-container right-item-container">
+                        <a onclick="navButtonClicked(0)" class="nav-item right-item">Activities</a>
+                    </div>
+                    <div class="nav-item-container right-item-container">
+                        <a onclick="navButtonClicked(1)" class="nav-item right-item">Experience</a>
+                    </div>
+                    <div class="nav-item-container right-item-container">
+                        <a onclick="navButtonClicked(2)" class="nav-item right-item">Education</a>
+                    </div>
                 </div>
             </div>
             <div class="content">
-                <div class="text-container">
+                <div id="text-container">
                     <h1 id="my-name">Yakup Atahanov</h1>
                     <div class="personality-container" id="">
                         <h2 class="i-am-text">I am a _____________</h2>
@@ -52,8 +74,59 @@
                     </div>
                 </div>
             </div>
-            
         </div>
+            <div id="scroll-up">
+                <div class="line"></div>
+                <div id="picture-border">
+                    <img src="/assets/active.png" class="image">
+                    <img src="/assets/level.png" class="image">
+                    <img src="/assets/mortarboard.png" class="image">
+                </div>
+                <div class="line"></div>
+                <div class="background-information-content scroll-up-content">
+                    <div class="section1-table personal-image">
+                        <div class="image-border">
+
+                        </div>
+                    </div>
+                    <div class="section1-table">
+                        
+                    </div>
+                    <div class="section1-table">
+                        
+                    </div>
+                    <div class="section1-table">
+                        
+                    </div>
+                </div>
+                <div class="experience-information-content scroll-up-content">
+                    <div class="section2-table personal-image">
+                    </div>
+                    <div class="section2-table">
+                        
+                    </div>
+                    <div class="section2-table">
+                        
+                    </div>
+                    <div class="section2-table">
+                        
+                    </div>
+                </div>
+                <div class="education-information-content scroll-up-content">
+                    <div class="section3-table personal-image">
+                    </div>
+                    <div class="section3-table">
+                        
+                    </div>
+                    <div class="section3-table">
+                        
+                    </div>
+                    <div class="section3-table">
+                        
+                    </div>
+                </div>
+            </div>
+    
         <script src="scripts/scripts.js"></script>
     </body>
 </html>

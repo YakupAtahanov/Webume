@@ -2,10 +2,14 @@ body {
     margin: 0;
     padding: 0;
     color: white;
+    background: blue;
     position: relative;
+    overflow-x: hidden;
 }
 
-.background {
+.background-image {
+    position: absolute;
+    z-index: -2;
     width: 100vw;
     height: 100vh;
     background-image: url("../assets/PWexample2.png");
@@ -13,23 +17,24 @@ body {
     background-position: center;
 }
 
+.background {
+    width: 100vw;
+    height: 100vh;
+}
+
 .navbar {
     width: 100%;
     height: 8%;
     background: rgba(0, 0, 0, 0.9);
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    transition: 1s;
+    top: 0;
 }
-
-/* .navbar:hover {
-    height: 10%;
-} */
 
 .nav-item-container {
     width: 5vw;
     height: 100%;
-    overflow: hidden;
     transition: 1500ms;
     display: flex;
     align-items: center;
@@ -37,6 +42,7 @@ body {
 }
 
 .nav-item {
+    font-family: 'Raleway', sans-serif;
     transition: all 400ms;
     display: flex;
 }
@@ -44,6 +50,30 @@ body {
 .nav-item:hover {
     padding-left: 0.1vw;
     transform: scale(1.2);
+}
+
+.left {
+    display: flex;
+    height: 100%;
+}
+
+.right {
+    left: 0px;
+    height: 100%;
+    display: flex;
+}
+
+.right-item-container {
+    width: 7vw;
+    padding-left: 0px;
+}
+
+.right-item {
+    padding: 3px, 3px, 3px, 3px;
+}
+
+.right-item:hover {
+    cursor: pointer;
 }
 
 #click-container {
@@ -54,7 +84,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: relative; */
 }
 
 .content {
@@ -66,6 +95,24 @@ body {
     flex-direction: column;
 }
 
+#text-container {
+    margin-top: -200px;
+    margin-left: 4vw;
+    min-width: 402px;
+    width: 31vw;
+    height: 9vw;
+
+    padding-top: 240px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: -1;
+}
+
 #my-name {
     font-family: 'Raleway', sans-serif;
     font-size: 3rem;
@@ -74,31 +121,106 @@ body {
     opacity: 0;
 }
 
-.text-container {
-    margin-left: 4vw;
-    width: 31vw;
-    height: 22vh;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
-    margin-top: -220px;
-    padding-top: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 .personality-container {
     display: flex;
 }
+
 .i-am-text {
     font-family: "Raleway";
     opacity: 0;
 }
+
 .personality {
     position: absolute;
     margin-left: -145px;
     margin-top: -2px;
     font-family: "Raleway";
     opacity: 0;
+}
+
+#scroll-up {
+    width: 100%;
+    height: 0;
+    /* position: fixed; */
+    background: rgba(0,0,0,0.9);
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.scroll-up-content {
+    color: black;
+    width: 100%;
+}
+
+.scroll-up-content {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+/* .background-information-content {
+}
+
+.experience-information-content {
+    display: none;
+    opacity: 0;
+}
+
+.education-information-content {
+    display: none;
+    opacity: 0;
+} */
+
+#picture-border {
+    height: 100%;
+    max-height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    /* background: red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    height: 0%;
+    max-height: 50px;
+    margin-top: 50%;
+    /* transform: translate(0); */
+}
+
+.section1-table {
+    width: 890vw;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 0 5vh 0 5vh;
+    border-radius: 10px;
+}
+
+.section2-table {
+    width: 89vw;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 5vh 0 5vh;
+    border-radius: 10px;
+}
+
+.section3-table {
+    width: 80vw;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 0 5vh 0 5vh;
+    border-radius: 10px;
+}
+.line {
+    margin-top: 2px;
+    height: 5px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.image-container {
+    margin-top: 1vh;
 }
