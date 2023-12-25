@@ -14,7 +14,7 @@ const TIMEOUT_TIME_5 = 2500
 
 var currentOpenedSession = -1;
 
-var btn_click_me = document.getElementById("btn-click-me")
+// var btn_click_me = document.getElementById("btn-click-me")
 var click_container = document.getElementById("click-container")
 var left_item_container = document.getElementsByClassName("left-item-container")
 var right_item_container = document.getElementsByClassName("right-item-container")
@@ -53,7 +53,7 @@ console.log(images)
 
 background_image.style.transition = TRANSITION_RATE_4
 text_container.style.transition = TRANSITION_RATE_4
-btn_click_me.style.transition = TRANSITION_RATE_4
+// btn_click_me.style.transition = TRANSITION_RATE_4
 my_name.style.transition = TRANSITION_RATE_3
 i_am_text.style.transition = TRANSITION_RATE_3
 personality.forEach(e => e.style.transition = TRANSITION_RATE_3)
@@ -67,8 +67,8 @@ function clickMeHandler() {
         click_container.style.background = "rgba(255,255,255,0)"
     }, TIMEOUT_TIME_2 - 300)
 
-    btn_click_me.disabled = true
-    btn_click_me.style.opacity = "0"
+    // btn_click_me.disabled = true
+    // btn_click_me.style.opacity = "0"
     
     setTimeout(function() {
         for (var item in left_item_container) {
@@ -156,7 +156,6 @@ function backgroundButtonClicked() {
     images[0].style.height = "100%"
     images[0].style.marginTop = "0"
     information_sections[0].style.height = "100%"
-    var tables = document.getElementsByClassName("section1-table")
 }
 function experienceButtonClicked() {
     clearPreviouslyOpenedSections(1)
@@ -181,3 +180,5 @@ function clearPreviouslyOpenedSections(n) {
         images[section].style.marginTop = "50%"
     }
 }
+
+document.addEventListener('DOMContentLoaded', clickMeHandler)
