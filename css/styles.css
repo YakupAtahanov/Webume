@@ -194,8 +194,8 @@ body {
     /* transform: translate(0); */
 }
 
-.section1-table {
-    width: 890vw;
+.section1-table, .personal-image {
+    width: 89vw;
     background: rgba(255, 255, 255, 0.05);
     margin: 0 5vh 0 5vh;
     border-radius: 10px;
@@ -209,7 +209,7 @@ body {
 }
 
 .section3-table {
-    width: 80vw;
+    width: 89vw;
     background: rgba(255, 255, 255, 0.15);
     margin: 0 5vh 0 5vh;
     border-radius: 10px;
@@ -223,4 +223,9 @@ body {
 
 .image-container {
     margin-top: 1vh;
+}
+
+.image-border {
+    height: 50px;
+    width: 50px;
 }

@@ -156,18 +156,21 @@ function backgroundButtonClicked() {
     images[0].style.height = "100%"
     images[0].style.marginTop = "0"
     information_sections[0].style.height = "100%"
+    information_sections[0].style.marginTop = "0.5vh"
 }
 function experienceButtonClicked() {
     clearPreviouslyOpenedSections(1)
     images[1].style.height = "100%"
     images[1].style.marginTop = "0"
     information_sections[1].style.height = "100%"
+    information_sections[1].style.marginTop = "0.5vh"
 }
 function educationButtonClicked() {
     clearPreviouslyOpenedSections(2)
     images[2].style.height = "100%"
     images[2].style.marginTop = "0"
     information_sections[2].style.height = "100%"
+    information_sections[2].style.marginTop = "0.5vh"
 }
 
 function clearPreviouslyOpenedSections(n) {
